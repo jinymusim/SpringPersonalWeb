@@ -5,6 +5,18 @@
   <title>Jinymusim homepage</title>
 </head>
 
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+  $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+  });
+  </script> 
+
 <style>
     .amazon-button {
         background-color: rgb(255,216,20);
@@ -29,11 +41,15 @@
   </style>
 
 <body>
+  <div id="header"></div>
+
   <div class="row">
     <a class="amazon-button" href="/mailme/">
       Add to Cart
     </a>
   </div>
+
+  <div id="footer"></div>
 </body>
 
 
