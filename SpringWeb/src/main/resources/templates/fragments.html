@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="html_head">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+    <script type="text/javascript" th:src="@{/js/jquery-3.3.1.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <title>Jinymusims personal page</title>
+</head>
+<body>
+    <div th:fragment="footer"></div>
+    <div th:fragment="menu">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link fas fa-home fa-2x icon-silver" th:href="@{/}"></a>
+                </li>
+                <li>
+                    <a class="nav-link" th:href="@{/mailme}">Mail me</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div th:fragment="header"></div>
+</body>
+
+</html>
