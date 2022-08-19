@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="fragments :: html_head"/>
+<head th:include="static/fragments :: html_head">
+  <title id="pageTitle">Home page</title>
+</head>
 
 
 <body>
-  <div th:replace="fragments :: header"/>
-  <div th:replace="fragments :: menu"/>
-
-  <div class="row">
-    <a class="amazon-button" href="/mailme/">
-      Add to Cart
-    </a>
+  <header th:include="static/fragments :: header">
+  </header>
+  <div th:include="static/fragments :: menu">
   </div>
 
-  <div th:replace="fragments :: footer"/>
+  <div class="row">
+    <button class="amazon-button" type="button" onclick="location.href=/mailme/">
+      Add to Cart
+    </button>
+  </div>
+
+  <footer th:include="static/fragments :: footer">
+  </footer>
 </body>
 
 
