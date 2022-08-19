@@ -7,34 +7,36 @@
 
 
 <body>
-<div th:include="static/fragments :: header">
-</div>
-<div th:include="static/fragments :: menu">
-</div>
-<form  id="formMail" method="post" action="">
-    <div>
-        <div class="form-group">
-            <label for="emailAddress">Email Address:</label>
-            <textarea id="emailAddress" name="emailAddress" class="form-control text-wrap" spellcheck="false"
-                      type="text" cols="20" rows="1" placeholder="example: noreply@google.com"></textarea>
+    <header th:include="static/fragments :: header">
+    </header>
+    <div th:include="static/fragments :: menu">
+    </div>
+
+    <form  id="formMail" method="post" action="">
+        <div class="ml-5 mr-5 mb-5">
+            <div>
+                <div class="form-group">
+                    <label for="emailAddress">Email Address:</label>
+                    <textarea id="emailAddress" name="emailAddress" class="form-control text-wrap" spellcheck="false"
+                        type="text" cols="20" rows="1" placeholder="example: noreply@google.com"></textarea>
+                </div>
+            </div>
+            <div>
+                <div class="form-group">
+                    <label for="emailText">Email text:</label>
+                    <textarea id="emailText" name="emailText" class="form-control text-wrap" spellcheck="false"
+                        type="text" cols="20" rows="10" placeholder="Text for email recipient"></textarea>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Send">
+            </div>
         </div>
-    </div>
-    <div>
-        <div class="form-group">
-            <label for="emailText">Email text:</label>
-            <textarea id="emailText" name="emailText" class="form-control text-wrap" spellcheck="false"
-                      type="text" cols="20" rows="10" placeholder="Text for email recipient"></textarea>
-        </div>
-    </div>
-    <div>
-        <input type="submit" value="Send">
-    </div>
+    </form>
 
-
-</form>
-
-<div th:include="static/fragments :: footer">
-
-</div>
+    <footer th:include="static/fragments :: footer">
+    </footer>
 </body>
+
+
 </html>

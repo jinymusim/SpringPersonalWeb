@@ -25,28 +25,30 @@
 <body>
 
     <header th:fragment="header">
-        <div  class="p-3 mb-2 bg-dark text-white">
-            <h1>Jinymusims pages</h1>
+        <div class="p-3 bg-warning text-dark">
+            <a th:href="@{/}">
+                <img th:src="@{/images/jinymusim-logo.png}"  class="img-fluid" alt="jinymsuim logo"/>
+            </a>
         </div>
 
     </header>
 
     <div th:fragment="menu">
-        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg sticky-top bg-warning mb-5">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/}">Homepage</a>
+                    <a class="nav-link mb-0 h1" th:href="@{/}">Homepage</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/mailme}">Mail me</a>
+                    <a class="nav-link mb-0 h1" th:href="@{/mailme}">Mail me</a>
                 </li>
             </ul>
         </nav>
     </div>
 
 
-    <footer th:fragment="footer" >
-        <div class="p-3 mb-2 bg-dark text-white">
+    <footer  th:fragment="footer">
+        <div class="p-3 bg-warning text-dark fixed-bottom">
             <p>&copy; 2022 jinymusim</p>
         </div>
     </footer>
