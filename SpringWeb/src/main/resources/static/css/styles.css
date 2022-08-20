@@ -7,7 +7,7 @@
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-    background-color: rgb(255,216,20);
+    background-color: rgb(255,193,7);
     border: none;
     border-radius: 18px;
     height: 36px;
@@ -25,4 +25,18 @@
 
 .amazon-button:active {
     opacity: 0.5;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }

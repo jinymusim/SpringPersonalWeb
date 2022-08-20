@@ -20,7 +20,7 @@
             integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
             crossorigin="anonymous"></script>
 
-    <title th:include=":: #pageTitle">Jinymusims personal page</title>
+    <title th:include=":: #pageTitle">Michal's Chudoba personal page</title>
 </head>
 <body>
 
@@ -37,10 +37,13 @@
         <nav class="navbar navbar-expand-lg sticky-top bg-warning mb-5">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link mb-0 h1" th:href="@{/}">Homepage</a>
+                    <a class="nav-link mb-0" th:href="@{/}">Homepage</a>
+                </li>          
+                <li class="nav-item active">
+                    <a class="nav-link mb-0" th:href="@{/projects}">My projects</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link mb-0 h1" th:href="@{/mailme}">Mail me</a>
+                    <a class="nav-link mb-0" href="mailto:peritum.michal@gmail.com}">Mail me</a>
                 </li>
             </ul>
         </nav>
@@ -49,7 +52,7 @@
 
     <footer  th:fragment="footer">
         <div class="p-3 bg-warning text-dark fixed-bottom">
-            <p>&copy; 2022 jinymusim</p>
+            <p>&copy; 2022 Michal Chudoba</p>
         </div>
     </footer>
 

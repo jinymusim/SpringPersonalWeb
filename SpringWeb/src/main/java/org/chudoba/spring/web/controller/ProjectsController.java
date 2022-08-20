@@ -1,7 +1,6 @@
 package org.chudoba.spring.web.controller;
 
 
-import lombok.extern.java.Log;
 import org.chudoba.spring.web.service.EmailService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -12,24 +11,25 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Controller
-public class MailmeController {
+public class ProjectsController {
 
-    private static Logger logger = Logger.getLogger(MailmeController.class.getName());
+    private static Logger logger = Logger.getLogger(ProjectsController.class.getName());
     private EmailService emailService;
 
-    public MailmeController(EmailService emailService){
+    public ProjectsController(EmailService emailService){
         this.emailService = emailService;
     }
 
-    @GetMapping("/mailme")
+    @GetMapping("/projects")
     public String getMailmePage() {
         logger.log(Level.INFO, this.getClass().getName() + " GET controller called");
-        return "mailme";
+        return "projects";
     }
-
-    @PostMapping("/mailme")
+    /* Not needed for projects yet
+    @PostMapping("/projects")
     public String sendEmail(ModelMap model, String emailAddress, String emailText){
         emailService.sendEmail(emailAddress, emailText);
         return "redirect:/";
     }
+    */
 }
