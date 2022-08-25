@@ -1,6 +1,9 @@
 /* Css with custom styles for use*/
 
 /* HTML main layout styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* Component specific styles*/
 .amazon-button {
@@ -26,3 +29,70 @@
 .amazon-button:active {
     opacity: 0.5;
 }
+
+
+/* Project page */
+
+.project-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.grid-space {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.grid-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 3px;
+}
+
+/* Index page */
+
+.index-grid {
+    display: grid;
+    margin: 1vw 20vw 15vw 4vw;
+    grid-template-columns: 20vw  1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.about-me p {
+    font-size: 15px;
+    margin-bottom: auto;
+}
+
+.about-me h1 {
+    font-size: xx-large;
+    margin-bottom: 5px;
+}
+
+.project-sample h2 {
+    font-size: x-large;
+    margin-bottom: 5px
+}
+
+/* Shared space */
+
+.link-style{
+    transition: opacity 0.2s;
+}
+
+.link-style:hover {
+    opacity: 0.7;
+}
+
+.link-style:active {
+    opacity: 0.5;
+}
+
+.img-link {
+    width: 100%;
+}
+
+

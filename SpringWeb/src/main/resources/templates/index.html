@@ -11,14 +11,23 @@
   <div th:include="static/fragments :: menu">
   </div>
 
-  <div class="container ml-2 mb-2 mr-2">
-    <h1 class="mb-2">About me:</h1>
-    <p>My name is Michal Chudoba, and I'm a student of computer science at Charles University.</p>
-    <P class="mb-5">Currently I'm begging the master’s degree program with focus on AI and Machine Learning.</P>
-    <h2 class="mb-2">Project sample:</h2>
-    <a href="https://github.com/jinymusim/Bachlors">
-      <img th:src="@{/images/patchwork-game.png}" class="img-fluid" alt="Game Patchwork"/>
-    </a>
+  <div class="index-grid">
+    <div class="Foto">
+    </div>
+    <div class="about-me">
+      <h1>About me:</h1>
+      <p>My name is Michal Chudoba, and I'm a student of computer science at Charles University.</p>
+      <p>Currently I'm begging the master’s degree program with focus on AI and Machine Learning.</p>
+    </div>
+    <div >
+      <!-- Blank space for grid-->
+    </div>
+    <div class="project-sample">
+      <h2>Project sample:</h2>
+      <a target="_blank" href="https://github.com/jinymusim/Bachlors" class="link-style">
+        <img th:src="@{/images/patchwork-game.png}" class="img-link" alt="Game Patchwork"/>
+      </a>
+    </div>
   </div>
 
   <footer th:include="static/fragments :: footer">
